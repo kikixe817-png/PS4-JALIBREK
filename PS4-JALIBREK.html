@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS4 11.00 Jailbreak Tool</title>
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #58a6ff;
+            font-family: monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .console {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        }
+        .btn {
+            background: #238636;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 6px;
+            width: 100%;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .prank-text {
+            color: #ff7b72;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="console">
+    <h3 style="color: #fff; text-align: center; margin-top:0;">PS4 WebKit Exploit v11.00</h3>
+    <hr style="border-color: #30363d;">
+    <p id="log1">> جاري الاتصال بالـ PS4...</p>
+    <p id="log2" style="display:none;">> تم العثور على الجهاز (PS4 Pro)</p>
+    <p id="log3" style="display:none;">> جاري اختراق ثغرة الكيرنل (Kernel Overflow)...</p>
+    <p id="log4" style="display:none; color: #7ee787;">> تم اختراق النظام بنجاح!</p>
+
+    <button id="mainBtn" class="btn" onclick="startHack()">بدء تفعيل الجيلبريك</button>
+    <div id="prank" class="prank-text">أكلت المقلب! 😂<br><br>روح ادرس بلا جيلبريك بلا هم! 🐙</div>
+</div>
+
+<script>
+function startHack() {
+    document.getElementById('mainBtn').style.display = 'none';
+    setTimeout(() => { document.getElementById('log2').style.display = 'block'; }, 1000);
+    setTimeout(() => { document.getElementById('log3').style.display = 'block'; }, 2500);
+    setTimeout(() => { document.getElementById('log4').style.display = 'block'; }, 4000);
+    setTimeout(() => { document.getElementById('prank').style.display = 'block'; }, 5500);
+}
+</script>
+
+</body>
+</html>
